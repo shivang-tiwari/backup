@@ -15,5 +15,7 @@ chmod +x run.sh
 ```
 Now enter this command to run croupier
 ```sh
-./run,sh
+./run.sh
 ```
+### Snippet Maker
+This makes a snippet for use in geany. To use it, paste the entire snippet code to the stdin of the program and the snippet will be printed in the output.txt file.
