@@ -5,7 +5,7 @@ To install my gtk-theme, unzip it and paste it in the `.themes` folder. To use t
 ## Geany setup
 Paste `snippets.conf`, `filetypes.cpp` and `geany.css` in the respective folders.
 ## TexStudio setup
-Paste both of these files in `/.config/texstudio/`. One of the files is already there and needs to be overwritten.
+Paste `textstudio.ini` and `stylesheet.qss` in `/.config/texstudio/`. `textstudio.ini` is already there and needs to be overwritten.
 ## Competetive programming
 All of my algorithms are in the `snippets.conf` file. Some extra stuff is mentioned here.
 ### Croupier
