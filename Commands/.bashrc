@@ -91,6 +91,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias quartus='~/intelFPGA_lite/20.1/quartus/bin/quartus &'
 alias shortcut='xdg-open ~/.bashrc'
 alias padhai='bash /home/shivang/Projects/Commands/padhai.sh'
 alias anime='bash /home/shivang/Projects/Commands/anime.sh'
