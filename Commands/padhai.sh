@@ -122,4 +122,4 @@ else
 fi
 disown
 rm /home/shivang/nohup.out
-
+exit
