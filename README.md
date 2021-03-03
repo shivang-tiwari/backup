@@ -19,3 +19,9 @@ Now enter this command to run croupier
 ```
 ### Snippet Maker
 This makes a snippet for use in geany. To use it, paste the entire snippet code to the stdin of the program and the snippet will be printed in the output.txt file.
+## Bash commands
+I have made a lot of bash files and aliases.
+### Class schedule
+Running `padhai.sh` takes you to the meet of the ongoing class depending on the time and day of the week. Class links can be specified in the variables on the top of the code.
+### Aliases
+My `.bashrc` file is also uploaded here.
