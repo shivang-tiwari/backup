@@ -7,9 +7,13 @@ Paste `snippets.conf`, `filetypes.cpp` and `geany.css` in the respective folders
 ## Competetive programming
 All of my algorithms are in the `snippets.conf` file. Some extra stuff is mentioned here.
 ### Croupier
-Croupier links the stdin of one program to the stdout of other. To run croupier run these commands in the terminal.
+Croupier links the stdin of one program to the stdout of other. To run configure run these commands in the terminal.
 ```sh
 chmod 777 A
 chmod 777 test
 chmod +x run.sh
+```
+Now enter this command to run croupier
+```sh
+./run,sh
 ```
