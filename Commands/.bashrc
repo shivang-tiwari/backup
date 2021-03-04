@@ -101,6 +101,7 @@ alias twitch='bash /home/shivang/Projects/Commands/twitch.sh'
 alias contest='bash /home/shivang/Projects/Commands/contest.sh'
 alias codeforces='bash /home/shivang/Projects/Commands/codeforces.sh'
 alias home='cd $HOME'
+alias maketest='touch /home/shivang/Projects/C++/Contest/in.txt'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -124,3 +125,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export QSYS_ROOTDIR="/home/shivang/intelFPGA_lite/20.1/quartus/sopc_builder/bin"
