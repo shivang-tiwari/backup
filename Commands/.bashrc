@@ -100,6 +100,7 @@ alias utube='bash /home/shivang/Projects/Commands/youtube.sh'
 alias twitch='bash /home/shivang/Projects/Commands/twitch.sh'
 alias contest='bash /home/shivang/Projects/Commands/contest.sh'
 alias codeforces='bash /home/shivang/Projects/Commands/codeforces.sh'
+alias chrome='bash /home/shivang/Projects/Commands/chrome.sh'
 alias home='cd $HOME'
 alias maketest='touch /home/shivang/Projects/C++/Contest/in.txt'
 # Add an "alert" alias for long running commands.  Use like so:
