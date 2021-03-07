@@ -1,4 +1,4 @@
 nohup google-chrome https://youtube.com/ &
 disown
-rm /home/shivang/nohup.out
+rm nohup.out
 exit

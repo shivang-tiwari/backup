@@ -1,4 +1,4 @@
 nohup google-chrome https://animepahe.com/ &
 disown
-rm /home/shivang/nohup.out
+rm nohup.out
 exit

@@ -121,5 +121,5 @@ else
 	nohup google-chrome $TEAMS &
 fi
 disown
-rm /home/shivang/nohup.out
+rm nohup.out
 exit

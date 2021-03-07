@@ -1,4 +1,4 @@
 nohup google-chrome https://www.twitch.tv/directory &
 disown
-rm /home/shivang/nohup.out
+rm nohup.out
 exit
