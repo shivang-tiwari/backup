@@ -1,3 +1,4 @@
+touch nohup.out
 nohup google-chrome https://codeforces.com/ &
 disown
 rm nohup.out
