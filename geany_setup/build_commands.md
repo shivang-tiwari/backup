@@ -2,6 +2,7 @@ Create a directory named Headers to keep the precompiled header for `stdc++.h`. 
 <ol>
 <li>Compile (Ctrl + S): <code>g++ -std=c++17 -include stdc++.h -I /home/shivang/Projects/C++/Headers  -Wshadow -Wall -o "%e" "%f" -O2 -Wno-unused-result</code> </li>
 <li>Build (F9): <code>g++ -std=c++17 -Wshadow -Wall -o "%e" "%f" -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG</code></li>
+<li>Make (F5): <code>gnome-terminal -- /home/shivang/Projects/Commands/run_samples.sh "%e"</code></li>
 <li>Execute(F11): <code>"./%e"</code></li>
 <li>Execute with Testcase: <code>time "./%e" < in.txt</code></li>
 </ol>
