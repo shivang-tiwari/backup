@@ -99,10 +99,12 @@ alias whatsapp='bash /home/shivang/Projects/Commands/whatsapp.sh'
 alias utube='bash /home/shivang/Projects/Commands/youtube.sh'
 alias twitch='bash /home/shivang/Projects/Commands/twitch.sh'
 alias contest='bash /home/shivang/Projects/Commands/contest.sh'
+alias chess='bash /home/shivang/Projects/Commands/lichess.sh'
 alias codeforces='bash /home/shivang/Projects/Commands/codeforces.sh'
 alias chrome='bash /home/shivang/Projects/Commands/chrome.sh'
 alias home='cd $HOME'
-alias maketest='touch /home/shivang/Projects/C++/Contest/in.txt'
+alias pnb='ipython3'
+alias cf='~/Projects/Commands/cf'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
