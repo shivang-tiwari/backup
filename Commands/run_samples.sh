@@ -8,11 +8,12 @@ if [[ -n "$name" ]]; then
 		echo "==============================================="
 		"/home/shivang/Projects/C++/Contest/$name" < "$input"
 		echo "==============================================="
-		#"/home/shivang/Projects/C++/Contest/$name" < "/home/shivang/Projects/C++/Contest/Samples/$name/in1.txt"
     done
-    #"./%e" < "./Samples/%e/in1.txt"
 else
     echo "No file provided"
 fi
-echo "The command exited with status $?. Press Enter to close the terminal."
+echo "
+------------------
+(program exited with code: $?)
+Press return to continue"
 read line
