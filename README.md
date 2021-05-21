@@ -2,12 +2,12 @@
 This is a backup of my linux setup.
 ## Gtk theme
 To install my gtk-theme, unzip it and paste it in the `.themes` folder. To use this, you must have gnome-tweaks installed. Go to gnome-tweaks/Appearance and select my gtk-theme.
-## Geany setup
-Paste `snippets.conf`, `filetypes.cpp` and `geany.css` in the respective folders.
+
 ## TexStudio setup
 Paste `textstudio.ini` and `stylesheet.qss` in `/.config/texstudio/`. `textstudio.ini` is already there and needs to be overwritten.
 ## Competetive programming
-All of my algorithms are in the `snippets.conf` file. Some extra stuff is mentioned here.
+### Geany setup
+Paste `snippets.conf`, `filetypes.cpp` and `geany.css` in the respective folders.
 ### Croupier
 Croupier links the stdin of one program to the stdout of other. To run configure run these commands in the terminal.
 ```sh
