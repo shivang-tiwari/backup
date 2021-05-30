@@ -1,6 +1,4 @@
 #!/bin/bash
-touch nohup.out
-nohup google-chrome https://www.twitch.tv/directory &
+nohup google-chrome https://www.twitch.tv/directory > /dev/null 2>&1&
 disown
-rm nohup.out
 exit

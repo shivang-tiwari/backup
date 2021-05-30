@@ -1,6 +1,4 @@
 #!/bin/bash
-touch nohup.out
-nohup google-chrome https://animepahe.com/ &
+nohup google-chrome https://animepahe.com/ > /dev/null 2>&1&
 disown
-rm nohup.out
 exit
