@@ -17,14 +17,14 @@ if [[ -n "$name" ]]; then
 			echo "
 ==============================================="
 			if diff -Z output.txt "/home/shivang/Projects/C++/Samples/Outputs/$name/ans${input:2:1}.txt" &>/dev/null; then
-				tput setaf 6; echo "Success !!! All test cases passed"
+				tput setaf 1; echo "Success !!! All test cases passed"
 			elif diff -Z output.txt "/home/shivang/Projects/C++/Samples/Outputs/$name/ansmytest${input:6:1}.txt" &>/dev/null; then
-				tput setaf 6; echo "Success !!! All test cases passed"
+				tput setaf 1; echo "Success !!! All test cases passed"
 			else
 				if [[ $input == *"in"* ]]; then
-					tput setaf 1;echo "Not all testcases are same as given"
+					tput setaf 2;echo "Not all testcases are same as given"
 				elif [ -f "/home/shivang/Projects/C++/Samples/Outputs/$name/ansmytest${input:6:1}.txt" ]; then
-					tput setaf 1;echo "Not all testcases are same as given"
+					tput setaf 2;echo "Not all testcases are same as given"
 				else
 					tput setaf 3;echo "No expected outputs were provided"
 				fi
