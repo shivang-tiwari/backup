@@ -43,7 +43,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -86,7 +86,6 @@ fi
 
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -96,7 +95,9 @@ alias shortcut='xdg-open ~/.bashrc'
 alias padhai='bash /home/shivang/Projects/Commands/padhai.sh'
 alias anime='bash /home/shivang/Projects/Commands/anime.sh'
 alias whatsapp='bash /home/shivang/Projects/Commands/whatsapp.sh'
+alias webmail='bash /home/shivang/Projects/Commands/webmail.sh'
 alias utube='bash /home/shivang/Projects/Commands/youtube.sh'
+alias spotify='env LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify %U'
 alias twitch='bash /home/shivang/Projects/Commands/twitch.sh'
 alias contest='bash /home/shivang/Projects/Commands/contest.sh'
 alias chess='bash /home/shivang/Projects/Commands/lichess.sh'
@@ -110,6 +111,12 @@ alias cf='~/Projects/Commands/cf'
 alias generate='bash /home/shivang/Projects/C++/Tools/Tester/Testcase_generator/run.sh'
 alias doosra='xrandr --output DP-1 --brightness 0.63'
 alias snippet='bash /home/shivang/Projects/Commands/make_snippet.sh'
+alias scilab='/home/shivang/Projects/Sem_5/Softwares/scilab-6.0.2.bin.linux-x86_64/scilab-6.0.2/bin/scilab'
+alias matlab='/home/shivang/Projects/Softwares/MATLAB/bin/matlab'
+alias wifi='nmcli connection up Hotspot'
+alias wifidown='nmcli connection down Hotspot'
+alias pls='sudo $(history -p !!)'
+alias fullpower='ulimit -s unlimited;'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -122,7 +129,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
-
+ulimit -s unlimited
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
