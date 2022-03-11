@@ -5,4 +5,4 @@ if grep "TODO" $f
 then
 	:
 fi
-g++ -std=c++17 -include stdc++.h -I /home/shivang/Projects/C++/Headers -Wshadow -Wall -o $e $f -O2 -Wno-unused-result -D shivang_ka_laptop
+g++ -std=c++17 -include stdc++.h -I /home/shivang/Projects/C++/Headers -Wshadow -Wall -o $e $f -O2 -Wno-unused-result -Wno-unused-variable -Wno-unused-but-set-variable -D shivang_ka_laptop

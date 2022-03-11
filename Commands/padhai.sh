@@ -1,20 +1,18 @@
 #!/bin/sh
 TEAMS="https://teams.microsoft.com/"
-SLOT1="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:l5KK8Dd2qvDQDpj44sF4zvGGIUUC2MRBir26LttUcnw1@thread.tacv2&ctx=channel" # EE341
-VIRUM="https://teams.microsoft.com/l/meetup-join/19%3aaAsrJafPVeYdDfEP5Uy2Xm__w26aAmY77_78JIz92ks1%40thread.tacv2/1627848652446?context=%7b%22Tid%22%3a%22403ee5f4-55b3-45cd-8ae2-824be887a075%22%2c%22Oid%22%3a%228ef7344c-e133-45b9-93e4-9f992d653314%22%7d"
-VIRUT="https://teams.microsoft.com/l/meetup-join/19%3aaAsrJafPVeYdDfEP5Uy2Xm__w26aAmY77_78JIz92ks1%40thread.tacv2/1627849307881?context=%7b%22Tid%22%3a%22403ee5f4-55b3-45cd-8ae2-824be887a075%22%2c%22Oid%22%3a%228ef7344c-e133-45b9-93e4-9f992d653314%22%7d"
-VIRUTH="https://teams.microsoft.com/l/meetup-join/19%3aaAsrJafPVeYdDfEP5Uy2Xm__w26aAmY77_78JIz92ks1%40thread.tacv2/1627849977378?context=%7b%22Tid%22%3a%22403ee5f4-55b3-45cd-8ae2-824be887a075%22%2c%22Oid%22%3a%228ef7344c-e133-45b9-93e4-9f992d653314%22%7d"
-SLOT3="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:KHakaFnA0aTd8AFD0tUlUt_5sBB-Xw9rpbXVgv9DBiE1@thread.tacv2&ctx=channel" # HS 301
-SLOT4="https://teams.microsoft.com/" # Free slot
-SLOT5="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:lcS9g2Z7RF1eMfGEt5T_kVWhxwyPWGJGD11XL68D0141@thread.tacv2&ctx=channel" # CS 218
-SLOT6="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:q-yheY32MycpgcXKkmkEElzeKjeCq4zBdEBsWcZhl3w1@thread.tacv2&ctx=channel" # EE 301
-SLOT7="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:O6gYXouOJivFjZBCILxqpKVHUxEUjPV_n8erJYXS_ec1@thread.tacv2&ctx=channel" # EE 610
-SLOT8="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:3NfeY95qsXtA6DpsP5lz6E6U7Jbq5WKNNVTxK84GQUY1@thread.tacv2&ctx=channel" # EE 605
-MONLAB="https://teams.microsoft.com/"
-TUELAB="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:JXp7bOoDxpL_LoZp1MFjRFWa34ltY5IqnM2rsddQLFA1@thread.tacv2&ctx=channel" # EE 340
-WEDLAB="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:EpAjrPfvjVdm262mgDhPEHe6iuh2FGZvbEm57a1CiaM1@thread.tacv2&ctx=channel" # EE 230
+SLOT1="https://teams.microsoft.com/_#/school/conversations/Section%205%20(Debanjan)?threadId=19:92d79fadb3534f06a14f565cf2753461@thread.tacv2&ctx=channel" # EE 350
+SLOT2="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:cRKLpbGq2xkTJfwyrrcVWM1nXvy6YhO0XapjwK1-pnw1@thread.tacv2&ctx=channel" # EE 338
+SLOT3="https://teams.microsoft.com/" # Free Slot
+SLOT4="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:rvMyUOXixBEduMoV3L08vmLpsrLvI9LNDVSVlBMeInc1@thread.tacv2&ctx=channel" # CS 408
+SLOT5="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:lgQr9ZI2dE6pD6ALJKtGRhw85Xv2xcqHtQJXdMlS0jU1@thread.tacv2&ctx=channel" # CS 419
+SLOT6="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:wuS0QdaGUCsrGy6w_RGGw_NaVTb91dbvlnUEqSshFdc1@thread.tacv2&ctx=channel" # EE 739
+SLOT7="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:yvQJ0iZxPf_qGe-eC88YfJgQHQqX1_JHGH-r2y5ONpM1@thread.tacv2&ctx=channel" # EE 621
+SLOT8="https://teams.microsoft.com/" # Free slot
+MONLAB="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:wOcxNCm7B53dmgr0PDziCigGkZnLs7YSJT24FYLi2dw1@thread.tacv2&ctx=channel" # EE 344
+TUELAB="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:wOcxNCm7B53dmgr0PDziCigGkZnLs7YSJT24FYLi2dw1@thread.tacv2&ctx=channel" # EE 344
+WEDLAB="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:qDPehZZSCTywSCRgheGjisxZFGnq9cKqcSF1R2ZQB7E1@thread.tacv2&ctx=channel" # EE 236
 THULAB="https://teams.microsoft.com/"
-FRILAB="https://teams.microsoft.com/_#/school/conversations/General?threadId=19:EpAjrPfvjVdm262mgDhPEHe6iuh2FGZvbEm57a1CiaM1@thread.tacv2&ctx=channel" # EE 230
+FRILAB="https://teams.microsoft.com/"
 
 slot_1_start="0815"
 slot_1_start=${slot_1_start#0}
@@ -40,9 +38,9 @@ slot_6_start="1045"
 slot_6_start=${slot_6_start#0}
 slot_6_end="1215"
 slot_6_end=${slot_6_end#0}
-slot_7_start="1345"
+slot_7_start="1845"
 slot_7_start=${slot_7_start#0}
-slot_7_end="1515"
+slot_7_end="2045"
 slot_7_end=${slot_7_end#0}
 slot_8_start="1545"
 slot_8_start=${slot_8_start#0}
@@ -61,7 +59,7 @@ if [[ $currentday == 1 ]]; then
 	if [[ $currentTime -ge $slot_1_start && $currentTime -le $slot_1_end ]]; then
 		nohup google-chrome $SLOT1 > /dev/null 2>&1&
 	elif [[ $currentTime -ge $slot_2_start && $currentTime -le $slot_2_end ]]; then
-		nohup google-chrome $VIRUM > /dev/null 2>&1&
+		nohup google-chrome $SLOT2 > /dev/null 2>&1&
 	elif [[ $currentTime -ge $slot_3_start && $currentTime -le $slot_3_end ]]; then
 		nohup google-chrome $SLOT3 > /dev/null 2>&1&
 	elif [[ $currentTime -ge $slot_4_start && $currentTime -le $slot_4_end ]]; then
@@ -81,7 +79,7 @@ elif [[ $currentday == 2 ]]; then
 	elif [[ $currentTime -ge $slot_2_start && $currentTime -le $slot_2_end ]]; then
 		nohup google-chrome $SLOT1 > /dev/null 2>&1&
 	elif [[ $currentTime -ge $slot_3_start && $currentTime -le $slot_3_end ]]; then
-		nohup google-chrome $VIRUT > /dev/null 2>&1&
+		nohup google-chrome $SLOT2 > /dev/null 2>&1&
 	elif [[ $currentTime -ge $slot_4_start && $currentTime -le $slot_4_end ]]; then
 		nohup google-chrome $SLOT3 > /dev/null 2>&1&
 	elif [[ $currentTime -ge $lab_start && $currentTime -le $lab_end ]]; then
@@ -107,7 +105,7 @@ elif [[ $currentday == 4 ]]; then
 	elif [[ $currentTime -ge $slot_3_start && $currentTime -le $slot_3_end ]]; then
 		nohup google-chrome $SLOT1 > /dev/null 2>&1&
 	elif [[ $currentTime -ge $slot_4_start && $currentTime -le $slot_4_end ]]; then
-		nohup google-chrome $VIRUTH > /dev/null 2>&1&
+		nohup google-chrome $SLOT2 > /dev/null 2>&1&
 	elif [[ $currentTime -ge $slot_7_start && $currentTime -le $slot_7_end ]]; then
 		nohup google-chrome $SLOT7 > /dev/null 2>&1&
 	elif [[ $currentTime -ge $slot_8_start && $currentTime -le $slot_8_end ]]; then
