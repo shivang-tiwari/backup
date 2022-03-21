@@ -55,6 +55,7 @@ void generateRandomTree(int n){
     printTreeEdges(arr, length);
 }
 int main(){
+	srand(uid(1,1e9));
 	cout << "-------------------------------------\n";
 	cout << "This program generates a random tree\n";
 	cout << "-------------------------------------\n";
