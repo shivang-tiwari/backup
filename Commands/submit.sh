@@ -11,7 +11,15 @@ if [[ -n "$name" ]]; then
 		done < "/home/shivang/Projects/C++/Samples/contest_name.txt"
     fi
 	cd "/home/shivang/Projects/C++/Contest"
-	/home/shivang/Projects/Commands/cf submit -f "$name".cpp "$contest_name$name"
+	if [[ $contest_name == a* ]]; then
+		echo "Submitting Problem ${name} to ${contest_name}"
+		name_sml="${name,,}"
+		url="https://atcoder.jp/contests/${contest_name}/tasks/${contest_name}_${name_sml}"
+		printf 'abca\n' | oj submit $url "${name}.cpp" > /dev/null 2>&1
+		echo "Successfully Submitted"
+	else
+		/home/shivang/Projects/Commands/cf submit -f "$name".cpp "$contest_name$name"
+	fi
 else
     echo "No file provided"
 fi

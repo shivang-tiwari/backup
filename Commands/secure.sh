@@ -9,4 +9,3 @@ if [[ -n "$location" ]]; then
 else
 	echo "No file provided"
 fi
-
