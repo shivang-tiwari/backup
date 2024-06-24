@@ -105,14 +105,15 @@ alias chess='bash /home/shivang/Projects/Commands/lichess.sh'
 alias play='bash /home/shivang/Projects/Commands/Music/play_song.sh'
 alias merge_pdf='bash /home/shivang/Projects/Commands/merge_pdf.sh'
 alias codeforces='bash /home/shivang/Projects/Commands/codeforces.sh'
+alias atcoder='bash /home/shivang/Projects/Commands/atcoder.sh'
 alias miccheck='nohup google-chrome https://webcammictest.com/check-mic.html > /dev/null 2>&1&'
 alias samajseva='nohup geany /home/shivang/Projects/C++/samajseva.cpp > /dev/null 2>&1&'
 alias home='cd $HOME'
 alias pnb='ipython3'
 alias cf='~/Projects/Commands/cf'
-alias generate='bash /home/shivang/Projects/C++/Tools/Tester/Testcase_generator/run.sh'
+alias generate='bash /home/shivang/Projects/C++/Tools/Tester/Generators/run.sh'
 alias visualize='python3 /home/shivang/Projects/C++/Tools/Tester/Visualizer/main.py'
-alias doosra='xrandr --output DP-1 --brightness 0.63'
+alias doosra='xrandr --output HDMI-1-0 --brightness 0.63'
 alias snippet='bash /home/shivang/Projects/Commands/make_snippet.sh'
 alias matlab='/home/shivang/Projects/Softwares/MATLAB/bin/matlab'
 alias wifi='nmcli connection up Hotspot'
@@ -122,6 +123,8 @@ alias fullpower='ulimit -s unlimited;'
 alias lightsout='xset dpms force off'
 alias hotspot='bash /home/shivang/Projects/Commands/hotspot.sh'
 alias sus='systemctl suspend'
+alias udado='docker rmi -f $(docker images -aq)'
+alias chaljabhai='sudo chmod 666 /var/run/docker.sock'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -148,3 +151,4 @@ fi
 export QSYS_ROOTDIR="/home/shivang/intelFPGA_lite/20.1/quartus/sopc_builder/bin"
 export VISUAL=geany
 export EDITOR="$VISUAL"
+export PATH="/home/shivang/.local/bin:$PATH"
