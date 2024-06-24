@@ -15,6 +15,8 @@ alpha_cap="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 for (( i=0; i<${#alpha}; i++ )); do
 	url="https://atcoder.jp/contests/${contestCode}/tasks/${contestCode}_${alpha:$i:1}"
 	status=$(curl -s --head -w %{http_code} ${url} -o /dev/null)
+	echo $url
+	echo $status
 	if [ "$status" = "200" ]; then
 		name="${alpha_cap:$i:1}"
 		echo "Parsing $name"
@@ -22,7 +24,7 @@ for (( i=0; i<${#alpha}; i++ )); do
 		mkdir "Outputs/$name"
 		touch "$name/output.txt"
 		num=1
-		oj download $url > /dev/null 2>&1
+		oj download $url
 		for input in test/*.in ; do
 			cp $input "./${name}/in${num}.txt"
 			num=$((num+1))
@@ -39,7 +41,7 @@ for (( i=0; i<${#alpha}; i++ )); do
 done
 touch contest_name.txt
 echo $contestCode > /home/shivang/Projects/C++/Samples/contest_name.txt
-google-chrome "https://atcoder.jp/contests/${contestCode}/tasks" & > /dev/null 2>&1
+nohup google-chrome "https://atcoder.jp/contests/${contestCode}/tasks" & > /dev/null 2>&1
 geany &
 disown
 exit

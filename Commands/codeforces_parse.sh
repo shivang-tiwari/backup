@@ -1,6 +1,12 @@
 #!/bin/bash
 cd $HOME
-cd ./cf/contest/
+
+if [ -d "/home/shivang/cf/gym/" ]; then
+	cd ./cf/gym/
+else
+	cd ./cf/contest/
+fi
+
 cd $(ls -d */|head -n 1)
 mkdir "/home/shivang/Projects/C++/Samples/Outputs"
 for problem in * ; do
@@ -18,3 +24,18 @@ for problem in * ; do
 done
 cd $home
 rm -r cf
+
+
+cd /home/shivang/Projects/C++/Samples
+
+for problem in */ ; do
+	cd $problem
+	
+	for filename in *.txt ; do
+/home/shivang/Projects/Commands/parse << EOF
+/home/shivang/Projects/C++/Samples/$problem$filename
+EOF
+	done
+	
+	cd -
+done
